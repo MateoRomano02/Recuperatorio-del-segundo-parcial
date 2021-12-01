@@ -1,23 +1,6 @@
 #include <iostream>
 using namespace std;
 
-/*
-1)
-Primero utilizaremos una lista con un struct para cada persona
-para recuperar los datos del archivo "Inscriptos.dat".    
-La estructura pensada para procesar información sería un 
-una lista. Y en la función mostrarListado solo
-tomamos la cantidad de cupos que haya, no todas los personas.
-Utilizamos este tipo de estructuras ya que nos permite tener un
-manejo dinámico de los datos, es decir, al principio utilizamos
-una lista ya que no sabemos la cantidad de registros que tiene el
-archivo "Inscriptos.dat", con lo que descartamos cualquier 
-estructura de datos con longitad fija(como en los arrays por 
-ejemplo). Y en la segunda parte utilizamos una lista con sublista, 
-ya que no sabemos la cantidad de creditos que se van a ingresar y
-también
-*/
-
 //structs
 struct Persona{
     int dni, codigo;
@@ -41,14 +24,12 @@ struct NodoListaCreditos{
 };
 
 //prototipo de funciones
-
 void ingresarCreditos(NodoListaCreditos*&listaCreditos);
 void insertarEnListaCreditos(NodoListaCreditos*&listaCreditos, Credito credito);
 void organizarInscriptos(NodoListaCreditos*&listaC, NodoListaPersonas*&listaP);
 void insertarEnListaPersonas(NodoListaPersonas*&lista, Persona persona);
 void mostrarListado(NodoListaPersonas*listaP, NodoListaCreditos*listaC);
 void crearArchivo();
-
 
 int main(){ 
    
