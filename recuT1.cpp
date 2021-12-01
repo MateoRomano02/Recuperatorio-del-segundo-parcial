@@ -40,7 +40,7 @@ int main(){
     
     ingresarCreditos(listaCreditos);
     cout<<"*************"<<endl;
-    FILE*archivo=fopen("data.dat","rb");
+    FILE*archivo=fopen("Inscriptos.dat","rb");
 
     organizarInscriptos(listaCreditos, listaPersonas);    
     mostrarListado(listaPersonas, listaCreditos);
